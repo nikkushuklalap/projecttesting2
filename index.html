@@ -61,10 +61,11 @@
           </div>
         </div>
 
-        <!-- Service Selection -->
+        <!-- Service Selection (Test ₹1 Option Added First) -->
         <div>
           <label class="block text-xs text-slate-400 mb-1">Required Service</label>
           <select id="serviceSelect" onchange="updatePriceDisplay()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500">
+            <option value="Test Payment" data-price="1">🧪 Test Payment Mode - ₹1</option>
             <option value="Battery Jumpstart" data-price="299">🔋 Battery Jumpstart - ₹299</option>
             <option value="Flat Tire Repair" data-price="199">🛞 Flat Tire Repair - ₹199</option>
             <option value="Engine Repair" data-price="499">🔧 Engine / General Repair - ₹499</option>
@@ -86,7 +87,7 @@
         <!-- Price Breakdown Box -->
         <div class="flex justify-between items-center bg-slate-900 p-3 rounded-xl border border-slate-700">
           <span class="text-xs text-slate-400">Total Payable Amount:</span>
-          <span id="priceBadge" class="text-lg font-black text-amber-400">₹299</span>
+          <span id="priceBadge" class="text-lg font-black text-amber-400">₹1</span>
         </div>
 
         <!-- Submit Button -->
@@ -107,8 +108,8 @@
 
       <div class="bg-slate-900 p-3 rounded-xl border border-slate-700 text-left space-y-1 text-xs">
         <div class="flex justify-between text-slate-400"><span>Booking ID:</span><span id="resBookingId" class="text-amber-400 font-mono">#MECH-0000</span></div>
-        <div class="flex justify-between text-slate-400"><span>UPI VPA:</span><span class="text-white font-mono">8271991641-oecd@ibl</span></div>
-        <div class="flex justify-between text-slate-400"><span>Amount:</span><span id="resAmount" class="text-emerald-400 font-bold">₹0</span></div>
+        <div class="flex justify-between text-slate-400"><span>UPI VPA:</span><span class="text-white font-mono">nikkushukla@fam</span></div>
+        <div class="flex justify-between text-slate-400"><span>Amount:</span><span id="resAmount" class="text-emerald-400 font-bold">₹1</span></div>
       </div>
 
       <button onclick="resetApp()" class="w-full bg-slate-700 hover:bg-slate-600 text-slate-200 py-2.5 rounded-xl text-xs font-semibold transition">
@@ -119,8 +120,8 @@
   </main>
 
   <script>
-    // Updated UPI VPA ID
-    const OWNER_UPI_ID = "8271991641-oecd@ibl";
+    // Configured UPI ID
+    const OWNER_UPI_ID = "nikkushukla@fam";
     const OWNER_NAME = "MechanicIt";
 
     let userLat = null;
